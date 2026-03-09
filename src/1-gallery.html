@@ -4,27 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 2</title>
+    <title>Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/basicLightbox/5.0.0/basicLightbox.min.css"
+      integrity="sha512-C+KPK958JmUdU8B9SVr8YpEZtQ1T1XrFX/OLvE/lt336DFWXFHL5Y9/tUewMEU+Uy3dUAS363XXLdBine0WDyQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load
-      src="./partials/header.html"
-      icon-path="./img/sprite.svg#logo"
-      highlight-act="active"
-    />
-
     <main>
       <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page 2
-        </h1>
-        <load src="./partials/back-link.html" />
-        <ul class="gallery"></ul>
+        <a class="back-link" href="./index.html">Go back</a>
+        <h1 class="main-title">Gallery</h1>
       </div>
+      <ul class="gallery">
+        <li class="gallery-item">
+          <a class="gallery-link" href="large-image.jpg">
+            <img
+              class="gallery-image"
+              src="small-image.jpg"
+              alt="Image description"
+            />
+          </a>
+        </li>
+      </ul>
     </main>
-
-    <load src="./partials/footer.html" />
     <script type="module" src="./js/1-gallery.js"></script>
   </body>
 </html>
